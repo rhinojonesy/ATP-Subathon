@@ -1,0 +1,58 @@
+body {
+    background-color: #111; /* Dark background */
+    color: #eee; /* Light text */
+    font-family: 'Viktorija', sans-serif; /* Viking font */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-image: url("https://lh3.googleusercontent.com/gg/AJxt1KODVgQD8wxetWjwNJl18G7MFzoLf3zsKyVjM3jfJvkX4OUZP_kF-QUJMK9eLQL5E7-qaOhWizV61ax3XXuRSV_P-9tH2aBy7FTcLoIYNhlV7xVU4nbWJRdeEQbuQdogoH_G5Eel_BjG38ehXpe9FY1IJpLf2Pb-PNNaNv9n4XfUMku6QYip"); /* Viking background */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+h1 {
+    color: #f0c808; /* Gold title */
+    margin-bottom: 20px;
+}
+
+.viking-image {
+    max-width: 200px;
+    margin-bottom: 30px;
+}
+
+.goals-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    grid-gap: 20px;
+}
+
+.goal {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent goal background */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transitions */
+}
+
+.goal:hover {
+    transform: translateY(-5px); /* Move up slightly on hover */
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.3); /* Add shadow on hover */
+}
+
+.sub-count {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #f0c808; /* Gold sub count */
+    margin-bottom: 10px;
+    display: block; /* Make it a block element */
+}
